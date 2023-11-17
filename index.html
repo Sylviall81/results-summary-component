@@ -10,62 +10,66 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
   <!-- <script src="data.json" defer></script> -->
   <script src="main.js"></script>
   <title>Frontend Mentor | Results summary component</title>
 
-  
+
 </head>
 
 <body>
 
-  <section class="main-container">
-    <div class="result-container">
+<div class="main-container">
+
+    <div class="result-container"><!--contenedor purprura derecha-->
 
       <h3> Your Result</h3>
 
       <div class="result-container-inner-circle">
-        76
-        of 100
+        
+         <div class="result-text-container">
+           <h1> 76 </h1>
+           <h4>of 100</h4>
+         </div>
+
       </div>
 
-      Great
-      You scored higher than 65% of the people who have taken these tests.
-
+      
+      <h5 class="tiny-text">Great
+        You scored higher than 65% of the people who have taken these tests.</p>
+      </h5>
     </div>
 
-    <div class="summary-container" id = "summary-container">
+    
 
 
-      <h2>Summary</h2>
+      <div class="summary-container" id="summary-container">
 
-      <ul class = "summary-item-list" id = "summary-item-list">
 
-        <!-- <li> Reaction
-          80 / 100</li>
-        <li> Memory
-          92 / 100</li>
-        <li> Verbal
-          61 / 100</li>
-        <li>Visual
-          72 / 100</li> -->
+        <div>
+          <h2>Summary</h2>
 
-      </ul>
+          <ul class="summary-item-list" id="summary-item-list">
 
-      <button class="summary-container-button">
-        Continue
-      </button>
 
-    </div>
+          </ul>
 
-  </section>
+          <button class="summary-button">
+            Continue
+          </button>
 
+        </div>
+      </div>
+ 
+
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href= "https://www.linkedin.com/in/sylviall81/" target= "_blank">Sylvia Llorente</a>.
+    Coded by <a href="https://www.linkedin.com/in/sylviall81/" target="_blank">Sylvia Llorente</a>.
   </div>
+
 
 
 </body>

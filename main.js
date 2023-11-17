@@ -9,21 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
             data.forEach(function(element) {
 
-                const listItemContainer = document.createElement('div');
-                listItemContainer.classList.add('list-item-container');
-
-                const listItem = document.createElement('li');
-                listItem.textContent = `${element.category}, ${element.score}/100`;
-                
+                const itemContainer = document.createElement('div');
+                itemContainer.classList.add('list-item-container');
+                itemContainer.textContent = `${element.category}, ${element.score}/100`;
+                itemContainer.backgroundColor = element.color;
                 
 
                 const bulletImg = document.createElement('img');
                 bulletImg.src = element.icon;
                 bulletImg.alt = element.category;
 
-                listItemContainer.appendChild(bulletImg);
-                listItemContainer.appendChild(listItem);
-                summaryContainer.appendChild(listItemContainer);
+                itemContainer.appendChild(bulletImg);
+                summaryContainer.appendChild(itemContainer);
             });
 
         })
