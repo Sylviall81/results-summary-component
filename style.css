@@ -101,6 +101,13 @@ h5{
     color:gainsboro
 }
 
+.tiny-text-container{
+    color:gainsboro;
+    display: flex;
+    width: 70%;
+   
+    
+}
 
 .summary-container{
     /*border: solid  0.5px black ;*/
@@ -113,12 +120,29 @@ h5{
     box-shadow:  6px 6px 6px 1px rgba(0, 0, 0, 0.2);   
 }
 
+.summary-item-list {
+    font-weight: bold;
+    color:black;
+   
+}
+
+.list-item-container{
+    display:flex;
+    border-radius: 24px;
+    width: 16vw;
+    height: 6.5vh;
+    margin-left: 8%;
+    margin-top: 1.5%;
+}
 .summary-button{
-    background-color: hsla(241, 72%, 46%, 0);
+    background-color: #313B59;
+    margin-top: 5%;
     margin-left: 15%;
-    border-radius: 16%;
-    width: 55%;
-    height: 2rem;
+    border-radius: 24px;
+    width: 13vw;
+    height: 5.5vh;
+    color:white;
+    border:none;
 }
 
 
