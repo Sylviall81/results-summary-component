@@ -103,10 +103,10 @@ h5{
 
 .tiny-text-container{
     color:gainsboro;
-    display: flex;
+    margin-left: 14%;
     width: 70%;
+    display: inline-block;
    
-    
 }
 
 .summary-container{
@@ -128,6 +128,8 @@ h5{
 
 .list-item-container{
     display:flex;
+    align-items: center;
+    justify-content: space-evenly;
     border-radius: 12px;
     width: 16vw;
     height: 6.5vh;

@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 bulletImg.src = element.icon;
                 bulletImg.alt = element.category;
 
-                itemContainer.textContent = `${element.category}, ${element.score}/100`;
+                itemContainer.textContent = `${element.category}    ${element.score}/100`;
                 itemContainer.style.backgroundColor = element.color
                 // itemContainer.style.color = element.color
                 
