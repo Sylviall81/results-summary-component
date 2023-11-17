@@ -16,9 +16,7 @@
 :root {
     --main-bg-color: hsl(0, 0%, 100%);
     --secondary-bg-color: hsla(241, 72%, 46%, 0);
-    --main-bg-color: hsl(0, 0%, 100%);
-    --main-bg-color: hsl(0, 0%, 100%);
-    --main-bg-color: 
+    
   }
 
 
@@ -69,18 +67,46 @@ p{
 
 
 .result-container{
+    margin-top: 30%;
     border: solid  0.5px black ;
     width: 35%;
-    height: 50%;
+    height: 48%;
     background-color: whitesmoke;
-    border-radius: 12%;
+    border-radius: 10%;
+    box-shadow:  1px 6px 6px 6px rgba(0, 0, 0, 0.2);
 }
 .summary-container{
-    border: solid  0.5px black ;
+    /*border: solid  0.5px black ;*/
+    margin-top: 30%;
     width: 35%;
-    height: 50%;
-    background-color: whitesmoke;
-    border-radius: 12%;
+    height: 48%;
+    background-color: var(--main-bg-color);
+    border-radius: 0 10% 10% 0;
+    box-shadow:  6px 6px 6px 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+ul{
+    display:flex;
+    flex-direction: column;
+    column-gap: 50px;
+}
+
+li{
+    background-color: transparent;
+    height: 2rem;
+    list-style: none;
+
+
+}
+
+.list-item-container{
+    background-color: hsl(39, 100%, 56%);
+    border: solid black 0.2px;
+    height: 1.8rem;
+    border-radius: 8%;
+    display: flex;
+    width: 75%;
 }
 
 
