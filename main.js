@@ -1,20 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const summaryItemList = document.getElementById("summary-item-list");
     // Fetch data.json (puedes usar fetch API o AJAX)
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
-
             console.log(data)
-            // Obtén el contenedor de atribución
-            // const summaryItemList  = document.getElementById('summary-item-list');
 
-            // // Crea un elemento de anclaje
-            // const anchorElement = document.createElement('a');
-            // anchorElement.href = data.attributionLink;
-            // anchorElement.textContent = data.attributionText;
+            data.forEach(function(element) {
+                
+                const bulletImg = document.createElement('img');
+                bulletImg.src = element.icon;
+                bulletImg.alt = element.category;
 
-            // // Agrega el enlace al contenedor de atribución
-            // attributionContainer.appendChild(anchorElement);
+                const listItem = document.createElement('li');
+                listItem.textContent = `${element.category}, ${element.score}/100`;
+                
+                
+                listItem.appendChild(bulletImg)
+                summaryItemList.appendChild(listItem);
+            });
+
         })
         .catch(error => console.error('Error al obtener datos:', error));
 });

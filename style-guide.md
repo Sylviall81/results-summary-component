@@ -41,8 +41,8 @@ Use transparency to get the colour variations necessary to match the design. Hin
 
 ### Body Copy
 
-- Font size (paragraphs): 18px
-
+- Font size (paragraphs): 18pxx
+x
 ### Font
 
 - Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk)
