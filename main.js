@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const bulletImg = document.createElement('img');
                 bulletImg.src = element.icon;
                 bulletImg.alt = element.category;
-                
+
                 itemContainer.textContent = `${element.category}, ${element.score}/100`;
                 itemContainer.backgroundColor = element.color;
                 
@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 
 
                 itemContainer.appendChild(bulletImg);
-                summaryContainer.appendChild(itemContainer);
+                summaryItemList.appendChild(itemContainer);
+                
             });
 
         })
