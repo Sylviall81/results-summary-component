@@ -11,13 +11,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 const itemContainer = document.createElement('div');
                 itemContainer.classList.add('list-item-container');
-                itemContainer.textContent = `${element.category}, ${element.score}/100`;
-                itemContainer.backgroundColor = element.color;
-                
 
                 const bulletImg = document.createElement('img');
                 bulletImg.src = element.icon;
                 bulletImg.alt = element.category;
+                
+                itemContainer.textContent = `${element.category}, ${element.score}/100`;
+                itemContainer.backgroundColor = element.color;
+                
+
+                
 
                 itemContainer.appendChild(bulletImg);
                 summaryContainer.appendChild(itemContainer);
