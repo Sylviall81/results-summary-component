@@ -98,7 +98,9 @@ body{
 }
 
 h5{
-    color:gainsboro
+    color: silver;
+    font-weight: lighter;
+    text-align: center;
 }
 h3{
     color:#313B59;
