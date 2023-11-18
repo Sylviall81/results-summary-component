@@ -11,20 +11,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 const itemContainer = document.createElement('div');
                 itemContainer.classList.add('list-item-container');
+                itemContainer.style.backgroundColor = element.color
 
+                const imgContainer = document.createElement('div');
+                imgContainer.classList.add('img-container');
                 const bulletImg = document.createElement('img');
                 bulletImg.src = element.icon;
                 bulletImg.alt = element.category;
 
-                itemContainer.textContent = `${element.category}    ${element.score}/100`;
-                itemContainer.style.backgroundColor = element.color
+                const itemText = document.createElement('h6');
+                itemText.textContent = `${element.category}  ${element.score}/100`;
+                
                 // itemContainer.style.color = element.color
                 
 
                 
-
-                itemContainer.appendChild(bulletImg);
                 summaryItemList.appendChild(itemContainer);
+                imgContainer.appendChild(bulletImg);
+                itemContainer.appendChild(imgContainer);
+                itemContainer.appendChild(itemText);
+               
                 
             });
 
